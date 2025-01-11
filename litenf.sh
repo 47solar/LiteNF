@@ -23,9 +23,9 @@ Help list
 	
 Exapmle use:
 
-./test.sh ban INPUT protocol udp port 80 word \"attack\"  //ban request \"attack\" on port 80
-./test.sh ban OUTPUT protocol tcp port 80              //ban requests to port 80
-./test.sh unban INPUT 1                               //unban first chain
+./litenf.sh ban INPUT protocol udp port 80 word \"attack\"  //ban request \"attack\" on port 80
+./litenf.sh ban OUTPUT protocol tcp port 80              //ban requests to port 80
+./litenf.sh unban INPUT 1                               //unban first chain
 
 ban         add port or word to the blacklist
                 INPUT           incoming traffic
