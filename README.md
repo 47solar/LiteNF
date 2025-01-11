@@ -11,12 +11,6 @@
 
 ## You must have nftables pre-installed !
 
-## Clone IpLit
-``` Shell
-git clone https://github.com/47solar/nf_lit.git
-cd nf_lit
-```
-
 ## Example use
 
 ![Image alt](https://github.com/47solar/ip_lit/assets/153699315/e3ddc797-4891-467e-9c05-96781ad682bc)
@@ -24,19 +18,19 @@ cd nf_lit
 
 Ban request "attack" on port 80
 ``` Shell
-./NfLit.sh ban INPUT protocol udp port 80 word "root"
+./litenf.sh ban INPUT protocol udp port 80 word "root"
 ```
 Ban requests to port 80
 ``` Shell
-./NfLit.sh ban OUTPUT protocol tcp port 80
+./litenf.sh ban OUTPUT protocol tcp port 80
 ```
 Limiting the number of connections to a specific port
 ``` Shell
-./NfLit.sh filter OUTPUT protocol tcp port 443
+./litenf.sh filter OUTPUT protocol tcp port 443
 ```
 Unban first chain
 ``` Shell
-./NfLit.sh unban INPUT 1
+./litenf.sh unban INPUT 1
 ```
 ## Arguments
 ```
